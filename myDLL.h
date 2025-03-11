@@ -4,8 +4,7 @@ MyDLLInit();
 
 MyDLLInsert();
 
-MyDLLRemove(){
-}
+MyDLLRemove();
 
 
 MyDLLFind();

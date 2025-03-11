@@ -1,22 +1,16 @@
-#include <stdlib.c>
+#include <myDLL.c>
 
 
-MyDLLInit(){
-}
+void MyDLLInit(){};
 
-MyDLLInsert()
-{
-}
+void MyDLLInsert(){};
 
-MyDLLRemove(){
-}
+void MyDLLRemove(){};
 
 
-MyDLLFind()
-{
-}
+void MyDLLFind(){};
 
-MyDLLFindNext(){};
+void MyDLLFindNext(){};
 
 
-MyDLLFindPrevious(){};
+void MyDLLFindPrevious(){};
