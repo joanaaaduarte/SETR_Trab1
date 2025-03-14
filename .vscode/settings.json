@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "mydll.h": "c",
+        "string.h": "c"
+    }
+}
