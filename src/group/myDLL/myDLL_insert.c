@@ -1,8 +1,13 @@
 #include "myDLL.h"
 
 void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {
-    
-    if (lst->numero_no >= numero_nos) { // Verifica se a lista está cheia
+
+    // Criar  novo nó
+    no *novoNo = &lst->array_nos[lst->numero_no];   
+    novoNo->chave_no = chave;                       
+
+    // Verifica se a lista está cheia
+    if (lst->numero_no >= numero_nos) { 
         printf("\n Lista cheia!\n");
         return;
     }
@@ -14,32 +19,22 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {
             return;
         }
     }
-
-    // Criar e configurar o novo nó
-    no *novoNo = &lst->array_nos[lst->numero_no];   // Obtém referência para o novo nó
-    novoNo->chave_no = chave;                       // Define a chave do nó
-
-    // Copiar os dados para o nó
-    strncpy((char *)novoNo->dados_no, (char *)dados, tamanho_dados - 1);
-    novoNo->dados_no[tamanho_dados - 1] = '\0'; 
-
-    novoNo->no_anterior = lst->ultimo_no;           // Define o nó anterior como o último nó atual
-    novoNo->proximo_no = -1;              
-
     
-    if (lst->numero_no == 0) {                      // Inserir nó no final da lista  
-
+    memcpy(novoNo->dados_no, dados, tamanho_dados);
+    novoNo->no_anterior = lst->ultimo_no;           
+    novoNo->proximo_no = -1;           
+    
+    if (lst->numero_no != 0) {         // Se já existem nós na lista                  
+        lst->array_nos[lst->numero_no- 1].proximo_no = lst->numero_no;   
+        novoNo->no_anterior = lst->numero_no - 1;                        
+        lst->ultimo_no = lst->numero_no;                                  
+    } else { 
         lst->no_atual = lst->numero_no;    
         lst->primeiro_no = lst->numero_no;
         lst->ultimo_no = lst->numero_no;   
-        lst->p_no_atual = novoNo;           
-
-    } else { // Se já existem nós na lista
-        lst->array_nos[lst->numero_no- 1].proximo_no = lst->numero_no;   // Atualiza o "próximo" do nó anterior
-        novoNo->no_anterior = lst->numero_no - 1;                        // Atualiza o "anterior" do novo nó para apontar para o anterior
-        lst->ultimo_no = lst->numero_no;                                 // Atualiza a cauda da lista para o novo nó
+        lst->p_no_atual = novoNo;      
     }
 
-    lst->numero_no++; // Incrementa o contador de nós na lista
+    lst->numero_no++; 
 }
 
