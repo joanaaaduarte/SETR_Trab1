@@ -1,8 +1,25 @@
+/** \brief myDDL_find.c 
+ *  \brief Retorna o elemento identificado pela chave.
+ * 
+ * Este arquivo contém funções para localizar nós numa Double Linked List (DLL).
+ * 
+ *  \authors Joana Duarte, Hugo Miranda
+ *  \param[in] lista *list 
+ *  \param[in] uint16_t id 
+ *  \date 18 Março 2025
+ */
 
 #include "myDLL.h"
 
+/**
+ * @brief Encontra um nó a partir da chave.
+ * 
+ * @param[in] list Ponteiro para a estrutura da lista.
+ * @param[in] id Identificador do nó a ser encontrado.
+ * @return Ponteiro para o nó encontrado.
+ */
 
-// Encontra o Nó a partir do id
+
 no *MyDLLFind(lista *list, uint16_t id){
     
     for (int i = 0; i < list->numero_no; i++) {
@@ -16,6 +33,16 @@ no *MyDLLFind(lista *list, uint16_t id){
     }
     return NULL;
 }
+
+ /**
+ * @brief Retorna o elemento anterior ou seguinte do elemento com a chave especificada.
+ * 
+ * @param[in] list Ponteiro para a estrutura da lista.
+ * @param[in] find Indica nó anterior ou seguinte que o utilizador pretende encontrar.
+ * @param[in] id Identificador do nó.
+ * @return Ponteiro para o nó encontrado.
+ */
+
 
 no *MyDLLFindPrevNext (lista *list, char *find, uint16_t id){
 

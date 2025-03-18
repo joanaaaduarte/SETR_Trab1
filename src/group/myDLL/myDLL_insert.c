@@ -1,4 +1,24 @@
+/** \brief myDDL_insert.c 
+ *  \brief Adicionar elemento na lista
+ * 
+ * Esta função permite inserir um novo nó na lista, garantindo que não haja duplicação de chaves 
+ * e respeitando o limite de elementos que a lista pode ter lista.
+ * 
+ * 
+ *  \authors Joana Duarte, Hugo Miranda
+ *  \date 18 Março 2025
+ */
+
 #include "myDLL.h"
+
+/**
+ * \brief Insere um novo nó na lista duplamente ligada.
+ * 
+ * \param[in] lst Ponteiro para a estrutura da lista onde o nó será inserido.
+ * \param[in] chave Identificador único do nó a ser inserido.
+ * \param[in] dados Ponteiro para os dados a serem armazenados no nó.
+ * 
+ */
 
 void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {
 
@@ -7,8 +27,10 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {
     novoNo->chave_no = chave;                       
 
     // Verifica se a lista está cheia
-    if (lst->numero_no >= numero_nos) { 
+    if (lst->numero_no < numero_nos){
+    }else{ 
         printf("\n Lista cheia!\n");
+
         return;
     }
 

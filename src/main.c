@@ -1,7 +1,22 @@
+/** \brief main.c 
+ *  \brief 
+ * 
+ * Este programa permite inserir, remover, buscar e exibir nós dentro de uma DLL.
+ * 
+ *  \authors Joana Duarte, Hugo Miranda
+ *  \date 18 Março 2025
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
 #include "myDLL.h"
+
+/**
+ * \brief Exibe todos os nós da lista.
+ * 
+ * \param[in] lst Ponteiro para a estrutura da lista.
+ */
 
 void ExibirLista(const lista *lst) {
     if (lst->numero_no == 0) {
@@ -21,6 +36,12 @@ void ExibirLista(const lista *lst) {
         printf("---------------------------------------------------\n");
     }
 }
+
+/**
+ * \brief Função principal para manipulação da lista duplamente ligada.
+ * 
+ * \return int Retorna 0 ao finalizar o programa.
+ */
 
 int main() {
     int escolha;
