@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SETR - Documentação Trabalho 1 - Lista Duplamente Ligada: Código-Fonte de /home/hugo/Desktop/Git_SETR/SETR_Trab1/include/myDLL.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SETR - Documentação Trabalho 1 - Lista Duplamente Ligada
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">myDLL.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="myDLL_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef MYDLL_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define MYDLL_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define tamanho_dados 60    </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define numero_nos 4       </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structno.html">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    uint16_t chave_no;                     </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structno.html#ae4fa598c31e6e1162e29f6367751aa78">   32</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> dados_no[tamanho_dados]; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structno.html#a2ca363143c092881abcf9e82cd88ff7b">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structno.html#a2ca363143c092881abcf9e82cd88ff7b">no_anterior</a>;                       </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structno.html#a5c59b8d720ae154a06643de956da9379">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structno.html#a5c59b8d720ae154a06643de956da9379">proximo_no</a>;                        </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}<a class="code" href="structno.html">no</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structlista.html">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="structno.html">no</a> array_nos [numero_nos];              </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structlista.html#a102a2b7c0fd82dbff481769074fd6ece">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structlista.html#a102a2b7c0fd82dbff481769074fd6ece">no_atual</a>;                           </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structlista.html#adae75fdaf5858dbc39affce1b8a643e2">   45</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structlista.html#adae75fdaf5858dbc39affce1b8a643e2">primeiro_no</a>;                        </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structlista.html#a4b042909d3973bca0aef7d0b7a92692d">   46</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structlista.html#a4b042909d3973bca0aef7d0b7a92692d">ultimo_no</a>;                          </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structlista.html#a2ac3e64aea86bd3e192a53055feb07a1">   47</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structlista.html#a2ac3e64aea86bd3e192a53055feb07a1">numero_no</a>;                          </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structlista.html#a07e5c2cc75316490f7f53ac5d5a6ecf9">   48</a></span>&#160;    <a class="code" href="structno.html">no</a>  *<a class="code" href="structlista.html#a07e5c2cc75316490f7f53ac5d5a6ecf9">p_no_atual</a>;                        </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}<a class="code" href="structlista.html">lista</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/* Funções auxiliares */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="myDLL_8h.html#ac0cee192a1e9c89f5ad14271b1e8de04">ValidarChave</a>(uint16_t *chave);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="myDLL_8h.html#a646ff09d12e07e80e0d8fa29c1eee90d">ValidarDados</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *dados);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* My DLL*/</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="myDLL_8h.html#af4e0c2423cdbebd82391801b8b073cbc">MyDLLInit</a>(<a class="code" href="structlista.html">lista</a> *DLL);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="myDLL_8h.html#a0dbf82cc4d6acbbca237b4a77a85a1f9">MyDLLInsert</a>(<a class="code" href="structlista.html">lista</a> *lst, uint16_t chave, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *dados);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="myDLL_8h.html#a867d9d4fb63d288efc64f9cdbade2ef2">MyDLLRemove</a>(<a class="code" href="structlista.html">lista</a> *list, uint16_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="structno.html">no</a> *<a class="code" href="myDLL_8h.html#a454c8f48964e84ccb58e2b67d7588fc5">MyDLLFind</a>(<a class="code" href="structlista.html">lista</a> *list, uint16_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="structno.html">no</a> *<a class="code" href="myDLL_8h.html#a650bcff1f106301829dec8a360ccdc2e">MyDLLFindPrevNext</a> (<a class="code" href="structlista.html">lista</a> *list,<span class="keywordtype">char</span> *find, uint16_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MYDLL_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="amyDLL_8h_html_a0dbf82cc4d6acbbca237b4a77a85a1f9"><div class="ttname"><a href="myDLL_8h.html#a0dbf82cc4d6acbbca237b4a77a85a1f9">MyDLLInsert</a></div><div class="ttdeci">void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados)</div><div class="ttdef"><b>Definition:</b> myDLL_insert.c:25</div></div>
+<div class="ttc" id="amyDLL_8h_html_a454c8f48964e84ccb58e2b67d7588fc5"><div class="ttname"><a href="myDLL_8h.html#a454c8f48964e84ccb58e2b67d7588fc5">MyDLLFind</a></div><div class="ttdeci">no * MyDLLFind(lista *list, uint16_t id)</div><div class="ttdef"><b>Definition:</b> myDLL_find.c:23</div></div>
+<div class="ttc" id="amyDLL_8h_html_a646ff09d12e07e80e0d8fa29c1eee90d"><div class="ttname"><a href="myDLL_8h.html#a646ff09d12e07e80e0d8fa29c1eee90d">ValidarDados</a></div><div class="ttdeci">void ValidarDados(unsigned char *dados)</div><div class="ttdoc">Função auxiliar para validar os dados.</div><div class="ttdef"><b>Definition:</b> func_aux.c:89</div></div>
+<div class="ttc" id="amyDLL_8h_html_a650bcff1f106301829dec8a360ccdc2e"><div class="ttname"><a href="myDLL_8h.html#a650bcff1f106301829dec8a360ccdc2e">MyDLLFindPrevNext</a></div><div class="ttdeci">no * MyDLLFindPrevNext(lista *list, char *find, uint16_t id)</div><div class="ttdoc">Retorna o elemento anterior ou seguinte do elemento com a chave especificada.</div><div class="ttdef"><b>Definition:</b> myDLL_find.c:47</div></div>
+<div class="ttc" id="amyDLL_8h_html_a867d9d4fb63d288efc64f9cdbade2ef2"><div class="ttname"><a href="myDLL_8h.html#a867d9d4fb63d288efc64f9cdbade2ef2">MyDLLRemove</a></div><div class="ttdeci">void MyDLLRemove(lista *list, uint16_t id)</div><div class="ttdoc">Remove um nó da lista duplamente ligada com base na chave fornecida.</div><div class="ttdef"><b>Definition:</b> myDLL_remove.c:24</div></div>
+<div class="ttc" id="amyDLL_8h_html_ac0cee192a1e9c89f5ad14271b1e8de04"><div class="ttname"><a href="myDLL_8h.html#ac0cee192a1e9c89f5ad14271b1e8de04">ValidarChave</a></div><div class="ttdeci">void ValidarChave(uint16_t *chave)</div><div class="ttdoc">Função auxiliar para validar a chave.</div><div class="ttdef"><b>Definition:</b> func_aux.c:27</div></div>
+<div class="ttc" id="amyDLL_8h_html_af4e0c2423cdbebd82391801b8b073cbc"><div class="ttname"><a href="myDLL_8h.html#af4e0c2423cdbebd82391801b8b073cbc">MyDLLInit</a></div><div class="ttdeci">void MyDLLInit(lista *DLL)</div><div class="ttdef"><b>Definition:</b> myDLL_init.c:21</div></div>
+<div class="ttc" id="astructlista_html"><div class="ttname"><a href="structlista.html">lista</a></div><div class="ttdoc">Estrutura que representa a lista duplamente ligada.</div><div class="ttdef"><b>Definition:</b> myDLL.h:42</div></div>
+<div class="ttc" id="astructlista_html_a07e5c2cc75316490f7f53ac5d5a6ecf9"><div class="ttname"><a href="structlista.html#a07e5c2cc75316490f7f53ac5d5a6ecf9">lista::p_no_atual</a></div><div class="ttdeci">no * p_no_atual</div><div class="ttdef"><b>Definition:</b> myDLL.h:48</div></div>
+<div class="ttc" id="astructlista_html_a102a2b7c0fd82dbff481769074fd6ece"><div class="ttname"><a href="structlista.html#a102a2b7c0fd82dbff481769074fd6ece">lista::no_atual</a></div><div class="ttdeci">int no_atual</div><div class="ttdef"><b>Definition:</b> myDLL.h:44</div></div>
+<div class="ttc" id="astructlista_html_a2ac3e64aea86bd3e192a53055feb07a1"><div class="ttname"><a href="structlista.html#a2ac3e64aea86bd3e192a53055feb07a1">lista::numero_no</a></div><div class="ttdeci">int numero_no</div><div class="ttdef"><b>Definition:</b> myDLL.h:47</div></div>
+<div class="ttc" id="astructlista_html_a4b042909d3973bca0aef7d0b7a92692d"><div class="ttname"><a href="structlista.html#a4b042909d3973bca0aef7d0b7a92692d">lista::ultimo_no</a></div><div class="ttdeci">int ultimo_no</div><div class="ttdef"><b>Definition:</b> myDLL.h:46</div></div>
+<div class="ttc" id="astructlista_html_adae75fdaf5858dbc39affce1b8a643e2"><div class="ttname"><a href="structlista.html#adae75fdaf5858dbc39affce1b8a643e2">lista::primeiro_no</a></div><div class="ttdeci">int primeiro_no</div><div class="ttdef"><b>Definition:</b> myDLL.h:45</div></div>
+<div class="ttc" id="astructno_html"><div class="ttname"><a href="structno.html">no</a></div><div class="ttdoc">Estrutura que representa um nó na lista duplamente ligada.</div><div class="ttdef"><b>Definition:</b> myDLL.h:30</div></div>
+<div class="ttc" id="astructno_html_a2ca363143c092881abcf9e82cd88ff7b"><div class="ttname"><a href="structno.html#a2ca363143c092881abcf9e82cd88ff7b">no::no_anterior</a></div><div class="ttdeci">int no_anterior</div><div class="ttdef"><b>Definition:</b> myDLL.h:33</div></div>
+<div class="ttc" id="astructno_html_a5c59b8d720ae154a06643de956da9379"><div class="ttname"><a href="structno.html#a5c59b8d720ae154a06643de956da9379">no::proximo_no</a></div><div class="ttdeci">int proximo_no</div><div class="ttdef"><b>Definition:</b> myDLL.h:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

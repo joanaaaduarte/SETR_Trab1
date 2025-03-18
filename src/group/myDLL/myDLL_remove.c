@@ -1,14 +1,13 @@
-/** \brief myDDL_remove.c 
- *  \brief Remoção elemento da lista
+/** \file myDLL_remove.c 
+ *  \brief Remoção de um elemento da lista
  * 
   * 
  * Esta função remove um nó identificado pela sua chave, garantindo a reestruturação da lista 
  * para manter a integridade dos ponteiros e evitar espaços vazios entre os elementos.
  * 
- *  \authors Joana Duarte, Hugo Miranda
- *  \param[in] lista *list 
- *  \param[in] uint16_t id 
+ *  \authors Joana Duarte(102608), Hugo Miranda(104348)
  *  \date 18 Março 2025
+ *  \bug  Sem bugs
  */
 
 

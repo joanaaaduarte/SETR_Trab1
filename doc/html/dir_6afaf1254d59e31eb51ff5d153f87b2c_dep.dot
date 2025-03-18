@@ -1,0 +1,11 @@
+digraph "/home/hugo/Desktop/Git_SETR/SETR_Trab1/src/group/myDLL" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a8a0f1c6be084965a9d3e64e627a8248 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="group" fontname="Helvetica", fontsize="10", URL="dir_a8a0f1c6be084965a9d3e64e627a8248.html"]
+  dir_6afaf1254d59e31eb51ff5d153f87b2c [shape=box, label="myDLL", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6afaf1254d59e31eb51ff5d153f87b2c.html"];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [shape=box label="include" URL="dir_d44c64559bbebec7f509842c48db8b23.html"];
+  dir_6afaf1254d59e31eb51ff5d153f87b2c->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="4", labeldistance=1.5 headhref="dir_000004_000000.html"];
+}

@@ -1,4 +1,28 @@
+/** \file func_aux.c 
+ *  \brief Funções Auxiliares para validar a chave e para validar os dados.
+ * 
+ * 
+ *  
+ *  \authors Joana Duarte(102608), Hugo Miranda(104348)
+ *  \date 18 Março 2025
+ *  \bug  Sem bugs
+ * 
+ * 
+ */
+
 #include "myDLL.h"
+
+/**
+ *  \brief Função auxiliar para validar a chave.
+ * 
+ *  Esta função recebe um ponteiro para a chave e realiza a validação da mesma
+ * 
+ *  \param[in]  chave  Ponteiro para a chave que vai ser validada
+ * 
+ * 
+ * 
+ * 
+ */
 
 void ValidarChave(uint16_t *chave) {
 
@@ -29,6 +53,7 @@ void ValidarChave(uint16_t *chave) {
 
         // Tentar converter para número
         char *aux;
+
         //Função obtida no tutorialspoint
         valor = strtol(entrada, &aux, 10);
 
@@ -48,16 +73,30 @@ void ValidarChave(uint16_t *chave) {
 }
 
 
+/**
+ *  \brief Função auxiliar para validar os dados.
+ * 
+ *  Esta função recebe um ponteiro para um conjunto de dados e verifica a sua validade.
+ * 
+ * 
+ *  \param[in] dados Ponteiro para os dados a serem validados.
+ * 
+ * 
+ * 
+ * 
+ */
+
 void ValidarDados(unsigned char *dados) {
     //getchar();
     printf("Inserir dados: ");
 
     // Agora, lê os dados
     if (fgets((char *)dados, tamanho_dados, stdin) == NULL) {
+
         printf("\nErro na leitura dos dados. Tente novamente.\n");
     }
 
-    // Remover o caractere de nova linha, se presente
+    // Remover o caracter "\n"
     dados[strcspn((char *)dados, "\n")] = '\0';
 
 }

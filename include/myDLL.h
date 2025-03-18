@@ -1,15 +1,16 @@
-/** \brief myDDL.h 
+/**
+ *  \file myDLL.h 
  *  \brief 
  * 
- * Este arquivo contém a estrutura de dados e as funções para a implementação de uma 
- * lista duplamente ligada estática, permitindo inserção, remoção e busca de nós.
+ * Este ficheiro contém a estrutura de dados e as funções para a implementação de uma 
+ * lista duplamente ligada estática, permitindo inserção, remoção e procura de nós.
  * 
  * 
  *  \authors Joana Duarte, Hugo Miranda
  *  \date 18 Março 2025
  */
 
- #ifndef MYDLL_H
+#ifndef MYDLL_H
 #define MYDLL_H
 
 #include <stdlib.h>
@@ -18,8 +19,8 @@
 #include <string.h>
 
 
-#define tamanho_dados 60
-#define numero_nos 4
+#define tamanho_dados 60    
+#define numero_nos 4       
 
 /**
  * \brief Estrutura que representa um nó na lista duplamente ligada.
@@ -27,7 +28,7 @@
 
 typedef struct 
 {
-    uint16_t chave_no;                     /** identifica o nó*/
+    uint16_t chave_no;                     /** \brief identifica o nó*/
     unsigned char dados_no[tamanho_dados]; /** dados do nó*/
     int no_anterior;                       /** indice do nó anterior*/ 
     int proximo_no;                        /** indice do proximo nó*/
@@ -51,7 +52,6 @@ typedef struct
 
 void ValidarChave(uint16_t *chave);
 void ValidarDados(unsigned char *dados);
-void LimparBuffer();
 
 /* My DLL*/
 void MyDLLInit(lista *DLL);
