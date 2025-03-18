@@ -1,1 +1,1 @@
-/usr/bin/cc -Wall -Werror -g CMakeFiles/ass1.dir/src/main.c.o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o -o ass1
+/usr/bin/cc -Wall -Werror -g CMakeFiles/ass1.dir/main.c.o CMakeFiles/ass1.dir/src/myDLL.c.o CMakeFiles/ass1.dir/src/func_aux.c.o -o ass1

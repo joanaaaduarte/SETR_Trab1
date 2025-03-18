@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /home/joana/cmake-3.30.8-linux-x86_64/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /home/joana/cmake-3.30.8-linux-x86_64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -69,111 +69,63 @@ include CMakeFiles/ass1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ass1.dir/flags.make
 
-CMakeFiles/ass1.dir/src/main.c.o: CMakeFiles/ass1.dir/flags.make
-CMakeFiles/ass1.dir/src/main.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/main.c
-CMakeFiles/ass1.dir/src/main.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ass1.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/src/main.c.o -MF CMakeFiles/ass1.dir/src/main.c.o.d -o CMakeFiles/ass1.dir/src/main.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/main.c
+CMakeFiles/ass1.dir/main.c.o: CMakeFiles/ass1.dir/flags.make
+CMakeFiles/ass1.dir/main.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/main.c
+CMakeFiles/ass1.dir/main.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ass1.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/main.c.o -MF CMakeFiles/ass1.dir/main.c.o.d -o CMakeFiles/ass1.dir/main.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/main.c
 
-CMakeFiles/ass1.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/main.c > CMakeFiles/ass1.dir/src/main.c.i
+CMakeFiles/ass1.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/main.c > CMakeFiles/ass1.dir/main.c.i
 
-CMakeFiles/ass1.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/main.c -o CMakeFiles/ass1.dir/src/main.c.s
+CMakeFiles/ass1.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/main.c -o CMakeFiles/ass1.dir/main.c.s
 
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o: CMakeFiles/ass1.dir/flags.make
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_find.c
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o -MF CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o.d -o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_find.c
+CMakeFiles/ass1.dir/src/myDLL.c.o: CMakeFiles/ass1.dir/flags.make
+CMakeFiles/ass1.dir/src/myDLL.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/myDLL.c
+CMakeFiles/ass1.dir/src/myDLL.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ass1.dir/src/myDLL.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/src/myDLL.c.o -MF CMakeFiles/ass1.dir/src/myDLL.c.o.d -o CMakeFiles/ass1.dir/src/myDLL.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/myDLL.c
 
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_find.c > CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.i
+CMakeFiles/ass1.dir/src/myDLL.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/src/myDLL.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/myDLL.c > CMakeFiles/ass1.dir/src/myDLL.c.i
 
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_find.c -o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.s
+CMakeFiles/ass1.dir/src/myDLL.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/src/myDLL.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/myDLL.c -o CMakeFiles/ass1.dir/src/myDLL.c.s
 
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o: CMakeFiles/ass1.dir/flags.make
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_init.c
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o -MF CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o.d -o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_init.c
+CMakeFiles/ass1.dir/src/func_aux.c.o: CMakeFiles/ass1.dir/flags.make
+CMakeFiles/ass1.dir/src/func_aux.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/func_aux.c
+CMakeFiles/ass1.dir/src/func_aux.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ass1.dir/src/func_aux.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/src/func_aux.c.o -MF CMakeFiles/ass1.dir/src/func_aux.c.o.d -o CMakeFiles/ass1.dir/src/func_aux.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/func_aux.c
 
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_init.c > CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.i
+CMakeFiles/ass1.dir/src/func_aux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/src/func_aux.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/func_aux.c > CMakeFiles/ass1.dir/src/func_aux.c.i
 
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_init.c -o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.s
-
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o: CMakeFiles/ass1.dir/flags.make
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_insert.c
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o -MF CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o.d -o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_insert.c
-
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_insert.c > CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.i
-
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_insert.c -o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.s
-
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o: CMakeFiles/ass1.dir/flags.make
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_remove.c
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o -MF CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o.d -o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_remove.c
-
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_remove.c > CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.i
-
-CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_remove.c -o CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.s
-
-CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o: CMakeFiles/ass1.dir/flags.make
-CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o: /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/aux/func_aux.c
-CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o: CMakeFiles/ass1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o -MF CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o.d -o CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o -c /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/aux/func_aux.c
-
-CMakeFiles/ass1.dir/src/group/aux/func_aux.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ass1.dir/src/group/aux/func_aux.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/aux/func_aux.c > CMakeFiles/ass1.dir/src/group/aux/func_aux.c.i
-
-CMakeFiles/ass1.dir/src/group/aux/func_aux.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/src/group/aux/func_aux.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/aux/func_aux.c -o CMakeFiles/ass1.dir/src/group/aux/func_aux.c.s
+CMakeFiles/ass1.dir/src/func_aux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ass1.dir/src/func_aux.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/func_aux.c -o CMakeFiles/ass1.dir/src/func_aux.c.s
 
 # Object files for target ass1
 ass1_OBJECTS = \
-"CMakeFiles/ass1.dir/src/main.c.o" \
-"CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o" \
-"CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o" \
-"CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o" \
-"CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o" \
-"CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o"
+"CMakeFiles/ass1.dir/main.c.o" \
+"CMakeFiles/ass1.dir/src/myDLL.c.o" \
+"CMakeFiles/ass1.dir/src/func_aux.c.o"
 
 # External object files for target ass1
 ass1_EXTERNAL_OBJECTS =
 
-ass1: CMakeFiles/ass1.dir/src/main.c.o
-ass1: CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o
-ass1: CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o
-ass1: CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o
-ass1: CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o
-ass1: CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o
+ass1: CMakeFiles/ass1.dir/main.c.o
+ass1: CMakeFiles/ass1.dir/src/myDLL.c.o
+ass1: CMakeFiles/ass1.dir/src/func_aux.c.o
 ass1: CMakeFiles/ass1.dir/build.make
 ass1: CMakeFiles/ass1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable ass1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ass1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ass1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

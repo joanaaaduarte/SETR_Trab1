@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /home/joana/cmake-3.30.8-linux-x86_64/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /home/joana/cmake-3.30.8-linux-x86_64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,8 +67,8 @@ CMAKE_BINARY_DIR = /home/joana/Documents/SETR/git/Trab1/SETR_Trab1/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
+	/home/joana/cmake-3.30.8-linux-x86_64/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/joana/cmake-3.30.8-linux-x86_64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -129,149 +129,77 @@ ass1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/build
 .PHONY : ass1/fast
 
-src/group/aux/func_aux.o: src/group/aux/func_aux.c.o
-.PHONY : src/group/aux/func_aux.o
+main.o: main.c.o
+.PHONY : main.o
 
 # target to build an object file
-src/group/aux/func_aux.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o
-.PHONY : src/group/aux/func_aux.c.o
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/main.c.o
+.PHONY : main.c.o
 
-src/group/aux/func_aux.i: src/group/aux/func_aux.c.i
-.PHONY : src/group/aux/func_aux.i
+main.i: main.c.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/group/aux/func_aux.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/aux/func_aux.c.i
-.PHONY : src/group/aux/func_aux.c.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/main.c.i
+.PHONY : main.c.i
 
-src/group/aux/func_aux.s: src/group/aux/func_aux.c.s
-.PHONY : src/group/aux/func_aux.s
+main.s: main.c.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/group/aux/func_aux.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/aux/func_aux.c.s
-.PHONY : src/group/aux/func_aux.c.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/main.c.s
+.PHONY : main.c.s
 
-src/group/myDLL/myDLL_find.o: src/group/myDLL/myDLL_find.c.o
-.PHONY : src/group/myDLL/myDLL_find.o
+src/func_aux.o: src/func_aux.c.o
+.PHONY : src/func_aux.o
 
 # target to build an object file
-src/group/myDLL/myDLL_find.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o
-.PHONY : src/group/myDLL/myDLL_find.c.o
+src/func_aux.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/func_aux.c.o
+.PHONY : src/func_aux.c.o
 
-src/group/myDLL/myDLL_find.i: src/group/myDLL/myDLL_find.c.i
-.PHONY : src/group/myDLL/myDLL_find.i
+src/func_aux.i: src/func_aux.c.i
+.PHONY : src/func_aux.i
 
 # target to preprocess a source file
-src/group/myDLL/myDLL_find.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.i
-.PHONY : src/group/myDLL/myDLL_find.c.i
+src/func_aux.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/func_aux.c.i
+.PHONY : src/func_aux.c.i
 
-src/group/myDLL/myDLL_find.s: src/group/myDLL/myDLL_find.c.s
-.PHONY : src/group/myDLL/myDLL_find.s
+src/func_aux.s: src/func_aux.c.s
+.PHONY : src/func_aux.s
 
 # target to generate assembly for a file
-src/group/myDLL/myDLL_find.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.s
-.PHONY : src/group/myDLL/myDLL_find.c.s
+src/func_aux.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/func_aux.c.s
+.PHONY : src/func_aux.c.s
 
-src/group/myDLL/myDLL_init.o: src/group/myDLL/myDLL_init.c.o
-.PHONY : src/group/myDLL/myDLL_init.o
+src/myDLL.o: src/myDLL.c.o
+.PHONY : src/myDLL.o
 
 # target to build an object file
-src/group/myDLL/myDLL_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o
-.PHONY : src/group/myDLL/myDLL_init.c.o
+src/myDLL.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/myDLL.c.o
+.PHONY : src/myDLL.c.o
 
-src/group/myDLL/myDLL_init.i: src/group/myDLL/myDLL_init.c.i
-.PHONY : src/group/myDLL/myDLL_init.i
-
-# target to preprocess a source file
-src/group/myDLL/myDLL_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.i
-.PHONY : src/group/myDLL/myDLL_init.c.i
-
-src/group/myDLL/myDLL_init.s: src/group/myDLL/myDLL_init.c.s
-.PHONY : src/group/myDLL/myDLL_init.s
-
-# target to generate assembly for a file
-src/group/myDLL/myDLL_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.s
-.PHONY : src/group/myDLL/myDLL_init.c.s
-
-src/group/myDLL/myDLL_insert.o: src/group/myDLL/myDLL_insert.c.o
-.PHONY : src/group/myDLL/myDLL_insert.o
-
-# target to build an object file
-src/group/myDLL/myDLL_insert.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o
-.PHONY : src/group/myDLL/myDLL_insert.c.o
-
-src/group/myDLL/myDLL_insert.i: src/group/myDLL/myDLL_insert.c.i
-.PHONY : src/group/myDLL/myDLL_insert.i
+src/myDLL.i: src/myDLL.c.i
+.PHONY : src/myDLL.i
 
 # target to preprocess a source file
-src/group/myDLL/myDLL_insert.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.i
-.PHONY : src/group/myDLL/myDLL_insert.c.i
+src/myDLL.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/myDLL.c.i
+.PHONY : src/myDLL.c.i
 
-src/group/myDLL/myDLL_insert.s: src/group/myDLL/myDLL_insert.c.s
-.PHONY : src/group/myDLL/myDLL_insert.s
-
-# target to generate assembly for a file
-src/group/myDLL/myDLL_insert.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.s
-.PHONY : src/group/myDLL/myDLL_insert.c.s
-
-src/group/myDLL/myDLL_remove.o: src/group/myDLL/myDLL_remove.c.o
-.PHONY : src/group/myDLL/myDLL_remove.o
-
-# target to build an object file
-src/group/myDLL/myDLL_remove.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o
-.PHONY : src/group/myDLL/myDLL_remove.c.o
-
-src/group/myDLL/myDLL_remove.i: src/group/myDLL/myDLL_remove.c.i
-.PHONY : src/group/myDLL/myDLL_remove.i
-
-# target to preprocess a source file
-src/group/myDLL/myDLL_remove.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.i
-.PHONY : src/group/myDLL/myDLL_remove.c.i
-
-src/group/myDLL/myDLL_remove.s: src/group/myDLL/myDLL_remove.c.s
-.PHONY : src/group/myDLL/myDLL_remove.s
+src/myDLL.s: src/myDLL.c.s
+.PHONY : src/myDLL.s
 
 # target to generate assembly for a file
-src/group/myDLL/myDLL_remove.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.s
-.PHONY : src/group/myDLL/myDLL_remove.c.s
-
-src/main.o: src/main.c.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/main.c.o
-.PHONY : src/main.c.o
-
-src/main.i: src/main.c.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/main.c.i
-.PHONY : src/main.c.i
-
-src/main.s: src/main.c.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/main.c.s
-.PHONY : src/main.c.s
+src/myDLL.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ass1.dir/build.make CMakeFiles/ass1.dir/src/myDLL.c.s
+.PHONY : src/myDLL.c.s
 
 # Help Target
 help:
@@ -282,24 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ass1"
-	@echo "... src/group/aux/func_aux.o"
-	@echo "... src/group/aux/func_aux.i"
-	@echo "... src/group/aux/func_aux.s"
-	@echo "... src/group/myDLL/myDLL_find.o"
-	@echo "... src/group/myDLL/myDLL_find.i"
-	@echo "... src/group/myDLL/myDLL_find.s"
-	@echo "... src/group/myDLL/myDLL_init.o"
-	@echo "... src/group/myDLL/myDLL_init.i"
-	@echo "... src/group/myDLL/myDLL_init.s"
-	@echo "... src/group/myDLL/myDLL_insert.o"
-	@echo "... src/group/myDLL/myDLL_insert.i"
-	@echo "... src/group/myDLL/myDLL_insert.s"
-	@echo "... src/group/myDLL/myDLL_remove.o"
-	@echo "... src/group/myDLL/myDLL_remove.i"
-	@echo "... src/group/myDLL/myDLL_remove.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/func_aux.o"
+	@echo "... src/func_aux.i"
+	@echo "... src/func_aux.s"
+	@echo "... src/myDLL.o"
+	@echo "... src/myDLL.i"
+	@echo "... src/myDLL.s"
 .PHONY : help
 
 

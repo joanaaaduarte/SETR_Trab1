@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/include -I/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL -I/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/aux
+C_INCLUDES = -I/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/include -I/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src
 
 C_FLAGS = -Wall -Werror -g
 

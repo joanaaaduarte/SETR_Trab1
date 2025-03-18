@@ -8,12 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/aux/func_aux.c" "CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o" "gcc" "CMakeFiles/ass1.dir/src/group/aux/func_aux.c.o.d"
-  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_find.c" "CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o" "gcc" "CMakeFiles/ass1.dir/src/group/myDLL/myDLL_find.c.o.d"
-  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_init.c" "CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o" "gcc" "CMakeFiles/ass1.dir/src/group/myDLL/myDLL_init.c.o.d"
-  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_insert.c" "CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o" "gcc" "CMakeFiles/ass1.dir/src/group/myDLL/myDLL_insert.c.o.d"
-  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/group/myDLL/myDLL_remove.c" "CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o" "gcc" "CMakeFiles/ass1.dir/src/group/myDLL/myDLL_remove.c.o.d"
-  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/main.c" "CMakeFiles/ass1.dir/src/main.c.o" "gcc" "CMakeFiles/ass1.dir/src/main.c.o.d"
+  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/main.c" "CMakeFiles/ass1.dir/main.c.o" "gcc" "CMakeFiles/ass1.dir/main.c.o.d"
+  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/func_aux.c" "CMakeFiles/ass1.dir/src/func_aux.c.o" "gcc" "CMakeFiles/ass1.dir/src/func_aux.c.o.d"
+  "/home/joana/Documents/SETR/git/Trab1/SETR_Trab1/src/myDLL.c" "CMakeFiles/ass1.dir/src/myDLL.c.o" "gcc" "CMakeFiles/ass1.dir/src/myDLL.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
