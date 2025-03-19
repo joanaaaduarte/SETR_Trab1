@@ -1,7 +1,7 @@
 /** \file main.c 
  
  * 
- * Este programa permite inserir, remover, procurar e exibir nós dentro de uma lista duplamente ligada.
+ * Este programa permite testar os módulos myDLL.c e myDLL.h que foram desenvolvidos para verificar o bom funcionamento da lista duplamente ligada. 
  * 
  *  \authors Joana Duarte(102608), Hugo Miranda(104348)
  *  \date 18 Março 2025
@@ -16,7 +16,7 @@
 /**
  * \brief Exibe todos os nós da lista.
  * 
- *  ESta função serve para imprimir a lista duplamente ligada 
+ *  ESta função serve para imprimir a lista duplamente ligada.
  * 
  * \param[in] lst Ponteiro para a estrutura da lista.
  */

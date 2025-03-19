@@ -1,13 +1,11 @@
 /**
  *  \file myDLL.h 
- *  \brief 
- * 
- * Este ficheiro contém a estrutura de dados e as funções para a implementação de uma 
- * lista duplamente ligada estática, permitindo inserção, remoção e procura de nós.
+ *  \brief Definições e funções para desenvolver uma lista duplamente ligada.
  * 
  * 
  *  \authors Joana Duarte, Hugo Miranda
  *  \date 18 Março 2025
+ *  \bug Sem bugs
  */
 
 #ifndef MYDLL_H
@@ -26,9 +24,9 @@
  * \brief Estrutura que representa um nó na lista duplamente ligada.
  */
 
-typedef struct 
+typedef struct                              //Referência : https://stackoverflow.com/questions/54463503/array-implementation-of-doubly-linked-list
 {
-    uint16_t chave_no;                     /** \brief identifica o nó*/
+    uint16_t chave_no;                     /** identifica o nó*/
     unsigned char dados_no[tamanho_dados]; /** dados do nó*/
     int no_anterior;                       /** indice do nó anterior*/ 
     int proximo_no;                        /** indice do proximo nó*/
@@ -38,13 +36,13 @@ typedef struct
  * \brief Estrutura que representa a lista duplamente ligada.
  */
 
-typedef struct 
+typedef struct                              //Adaptado de: https://stackoverflow.com/questions/44293723/how-can-i-implement-two-node-arrays-statically-and-also-efficiently
 {
     no array_nos [numero_nos];              /** array de nós*/
+    int numero_no;                          /** numero total de nós*/
     int no_atual;                           /** indice do nó atual*/
     int primeiro_no;                        /** indice do primeiro no*/
     int ultimo_no;                          /** indece do ultimo no*/
-    int numero_no;                          /** numero total de nós*/
     no  *p_no_atual;                        /** ponteiro para nó atual*/
 }lista;
 

@@ -15,10 +15,9 @@
 /**
  *  \brief Função auxiliar para validar a chave.
  * 
- *  Esta função recebe um ponteiro para a chave e realiza a validação da mesma
+ *  Esta função recebe um ponteiro para a chave e realiza a validação da mesma.
  * 
  *  \param[in]  chave  Ponteiro para a chave que vai ser validada
- * 
  * 
  * 
  * 
@@ -38,8 +37,8 @@ void ValidarChave(uint16_t *chave) {
             continue;
         }
 
-        // Remover '\n' se presente
-        entrada[strcspn(entrada, "\n")] = '\0';
+        // Remover '\n' , se existir 
+        entrada[strcspn(entrada, "\n")] = '\0';         //Referência: https://stackoverflow.com/questions/2693776/removing-trailing-newline-character-from-fgets-input
 
         // Verificar se a entrada tem mais de 5 caracteres
         if (strlen(entrada) > 5) {
@@ -54,8 +53,8 @@ void ValidarChave(uint16_t *chave) {
         // Tentar converter para número
         char *aux;
 
-        //Função obtida no tutorialspoint
-        valor = strtol(entrada, &aux, 10);
+        //Converter string para numero
+        valor = strtol(entrada, &aux, 10);          //Referência: https://www.geeksforgeeks.org/convert-string-to-int-in-c/#2-convert-string-to-int-using-strtol-function
 
         if (*aux != '\0') {                         // verificar caracteres inválidos na conversão
             printf("\nErro! Insira apenas números.\n");
@@ -80,9 +79,6 @@ void ValidarChave(uint16_t *chave) {
  * 
  * 
  *  \param[in] dados Ponteiro para os dados a serem validados.
- * 
- * 
- * 
  * 
  */
 
