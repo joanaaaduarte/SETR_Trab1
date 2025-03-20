@@ -215,7 +215,7 @@ no *MyDLLFindPrevNext (lista *list, char *find, uint16_t id){
         // Caso não seja o primeiro
         list->no_atual = list->p_no_atual->no_anterior; // Atualiza o índice do nó atual para o anterior
         list->p_no_atual = &list->array_nos[list->no_atual]; // Atualiza o ponteiro p_no_atual para apontar para o nó anterior dentro do array de nós
-        printf("Nó encontrado prev: Chave = %d, Dados = %s\n", list->p_no_atual->chave_no, list->p_no_atual->dados_no);
+        printf("Nó anterior encontrado: Chave = %d, Dados = %s\n", list->p_no_atual->chave_no, list->p_no_atual->dados_no);
         return list->p_no_atual;
 
     } else if((strcmp(find, "S") == 0) || (strcmp(find, "s") == 0)){     // retorna 0 se o "find" for igual a 's' ou 'S'                          
@@ -227,7 +227,7 @@ no *MyDLLFindPrevNext (lista *list, char *find, uint16_t id){
         // Caso não seja o último
         list->no_atual = list->p_no_atual->proximo_no; // Atualiza o índice do nó atual para o seguinte
         list->p_no_atual = &list->array_nos[list->no_atual]; // Atualiza o ponteiro p_no_atual para apontar para o nó seguinte dentro do array de nós
-        printf("Nó encontrado prev: Chave = %d, Dados = %s\n", list->p_no_atual->chave_no, list->p_no_atual->dados_no);
+        printf("Nó seguinte encontrado: Chave = %d, Dados = %s\n", list->p_no_atual->chave_no, list->p_no_atual->dados_no);
         return list->p_no_atual;
 
     } else 
