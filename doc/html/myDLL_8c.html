@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SETR - Documentação Trabalho 1 - Lista Duplamente Ligada: Referência ao ficheiro /home/hugo/Secretária/SETR/SETR_Trab1/src/myDLL.c</title>
+<title>SETR - Documentação Trabalho 1 - Lista Duplamente Ligada: Referência ao ficheiro myDLL.c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,19 +85,19 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Diagrama de dependências de inclusão para myDLL.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="myDLL_8c__incl.png" border="0" usemap="#a_2home_2hugo_2Secret_xC3_xA1ria_2SETR_2SETR__Trab1_2src_2myDLL_8c" alt=""/></div>
-<map name="a_2home_2hugo_2Secret_xC3_xA1ria_2SETR_2SETR__Trab1_2src_2myDLL_8c" id="a_2home_2hugo_2Secret_xC3_xA1ria_2SETR_2SETR__Trab1_2src_2myDLL_8c">
-<area shape="rect" title="Inicializar a lista duplamente ligada." alt="" coords="90,5,271,60"/>
-<area shape="rect" href="myDLL_8h.html" title="Este ficheiro contém a estrutura de dados e as funções para a implementação de uma lista duplamente l..." alt="" coords="141,108,220,133"/>
-<area shape="poly" title=" " alt="" coords="183,60,183,94,178,94,178,60"/>
-<area shape="rect" title=" " alt="" coords="5,181,76,207"/>
-<area shape="poly" title=" " alt="" coords="159,136,77,177,74,173,157,131"/>
-<area shape="rect" title=" " alt="" coords="101,181,167,207"/>
-<area shape="poly" title=" " alt="" coords="175,135,151,171,147,168,171,132"/>
-<area shape="rect" title=" " alt="" coords="192,181,263,207"/>
-<area shape="poly" title=" " alt="" coords="191,132,214,168,210,171,186,135"/>
-<area shape="rect" title=" " alt="" coords="287,181,357,207"/>
-<area shape="poly" title=" " alt="" coords="205,131,288,173,286,177,202,136"/>
+<div class="center"><img src="myDLL_8c__incl.png" border="0" usemap="#amyDLL_8c" alt=""/></div>
+<map name="amyDLL_8c" id="amyDLL_8c">
+<area shape="rect" title="Implementação das funções para desenvolver uma lista duplamente ligada." alt="" coords="141,5,220,31"/>
+<area shape="rect" href="myDLL_8h.html" title="Definições e funções para desenvolver uma lista duplamente ligada." alt="" coords="141,79,220,104"/>
+<area shape="poly" title=" " alt="" coords="183,31,183,65,178,65,178,31"/>
+<area shape="rect" title=" " alt="" coords="5,152,76,177"/>
+<area shape="poly" title=" " alt="" coords="159,106,77,148,74,143,157,102"/>
+<area shape="rect" title=" " alt="" coords="101,152,167,177"/>
+<area shape="poly" title=" " alt="" coords="175,106,151,142,147,139,171,103"/>
+<area shape="rect" title=" " alt="" coords="192,152,263,177"/>
+<area shape="poly" title=" " alt="" coords="191,103,214,139,210,142,186,106"/>
+<area shape="rect" title=" " alt="" coords="287,152,357,177"/>
+<area shape="poly" title=" " alt="" coords="205,102,288,143,286,148,202,106"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -116,7 +116,7 @@ Funções</h2></td></tr>
 <tr class="memdesc:add84dbac98109962205183610d376afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encontra um nó a partir da chave.  <br /></td></tr>
 <tr class="separator:add84dbac98109962205183610d376afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7669890660b16db90762d6deb185382" id="r_ab7669890660b16db90762d6deb185382"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structno.html">no</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="myDLL_8c.html#ab7669890660b16db90762d6deb185382">MyDLLFindPrevNext</a> (<a class="el" href="structlista.html">lista</a> *list, char *find, uint16_t id)</td></tr>
-<tr class="memdesc:ab7669890660b16db90762d6deb185382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o elemento anterior ou seguinte do elemento com a chave especificada.  <br /></td></tr>
+<tr class="memdesc:ab7669890660b16db90762d6deb185382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o elemento anterior ou seguinte do elemento com a chave pedida.  <br /></td></tr>
 <tr class="separator:ab7669890660b16db90762d6deb185382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
@@ -154,7 +154,7 @@ Hugo Miranda, nemc: 104348 </dd></dl>
 </div><div class="memdoc">
 
 <p>Encontra um nó a partir da chave. </p>
-<p>Esta função percorre a lista duplamente ligada e retorna um ponteiro para o nó encontrado que tem a chave fornecida.</p>
+<p>Esta função percorre a lista duplamente ligada e retorna um ponteiro para o nó encontrado que tem a chave fornecida. Caso não seja encontado a função retorna NULL.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>-&gt; Ponteiro para a estrutura da lista. </td></tr>
@@ -198,7 +198,8 @@ Hugo Miranda, nemc: 104348 </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Retorna o elemento anterior ou seguinte do elemento com a chave especificada. </p>
+<p>Retorna o elemento anterior ou seguinte do elemento com a chave pedida. </p>
+<p>Esta função retorna o pornteiro para o nó seguinte ou anterior. Caso não seja encontrado nehum nó com a chave pedida, a função retorna NULL.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>-&gt; Ponteiro para a estrutura da lista. </td></tr>

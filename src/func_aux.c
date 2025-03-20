@@ -1,9 +1,10 @@
 /** \file func_aux.c 
  *  \brief Funções Auxiliares para validar a chave e para validar os dados.
  *  
- *  \authors Joana Duarte(102608), Hugo Miranda(104348)
- *  \date 18 Março 2025
- *  \bug  Sem bugs
+ * \authors Joana Duarte, nmec: 102608
+ * \authors Hugo Miranda, nemc: 104348
+ * \date 25 Março 2025
+ * \bug  Sem bugs
  * 
  * 
  */

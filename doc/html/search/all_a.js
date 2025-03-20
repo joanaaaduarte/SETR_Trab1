@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trabalho_201_20lista_20duplamente_20ligada_0',['Documentação Trabalho 1 - Lista Duplamente Ligada',['../index.html',1,'']]]
+  ['trabalho_201_20double_20linked_20list_20dll_0',['Documentação Trabalho 1 - Double Linked List (DLL)',['../index.html',1,'']]]
 ];

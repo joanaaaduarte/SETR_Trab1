@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ligada_0',['Documentação Trabalho 1 - Lista Duplamente Ligada',['../index.html',1,'']]],
-  ['lista_20de_20bugs_1',['Lista de Bugs',['../bug.html',1,'']]],
-  ['lista_20duplamente_20ligada_2',['Documentação Trabalho 1 - Lista Duplamente Ligada',['../index.html',1,'']]]
+  ['linked_20list_20dll_0',['Documentação Trabalho 1 - Double Linked List (DLL)',['../index.html',1,'']]],
+  ['list_20dll_1',['Documentação Trabalho 1 - Double Linked List (DLL)',['../index.html',1,'']]],
+  ['lista_20de_20bugs_2',['Lista de Bugs',['../bug.html',1,'']]]
 ];

@@ -3,9 +3,10 @@
  *  \brief Definições e funções para desenvolver uma lista duplamente ligada.
  * 
  * 
- *  \authors Joana Duarte, Hugo Miranda
- *  \date 18 Março 2025
- *  \bug Sem bugs
+ * \authors Joana Duarte, nmec: 102608
+ * \authors Hugo Miranda, nemc: 104348
+ * \date 25 Março 2025
+ * \bug Sem bugs
  */
 
 #ifndef MYDLL_H

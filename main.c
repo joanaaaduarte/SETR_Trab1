@@ -1,10 +1,11 @@
 /** \file main.c 
  
  * 
- * Este programa permite testar os módulos myDLL.c e myDLL.h que foram desenvolvidos para verificar o bom funcionamento da lista duplamente ligada. 
+ * Este programa permite testar os módulos myDLL.c e myDLL.h de uma Double Linked List (DLL). É possível inserir, remover e procurar nós de uma lista.
  * 
- *  \authors Joana Duarte(102608), Hugo Miranda(104348)
- *  \date 18 Março 2025
+  * \authors Joana Duarte, nmec: 102608
+ *  \authors Hugo Miranda, nemc: 104348
+ *  \date 25 Março 2025
  *  \bug   Sem bugs
  */
 
@@ -16,7 +17,7 @@
 /**
  * \brief Exibe todos os nós da lista.
  * 
- *  ESta função serve para imprimir a lista duplamente ligada.
+ *  ESta função serve para imprimir a lista (DLL).
  * 
  * \param[in] lst Ponteiro para a estrutura da lista.
  */
@@ -41,8 +42,17 @@ void ExibirLista(const lista *lst) {
 }
 
 /**
- * \brief Função principal para manipulação da lista duplamente ligada.
+ * \brief Função principal para manipulação da lista (DLL).
  * 
+ * O programa fornece um menu interativo permitindo ao usuário poder escolher as diferentes opções:
+ * 
+ * 1-> Inserir um novo Nó;
+ * 2-> Exibir lista de Nós;
+ * 3-> Remover Nó da lista;
+ * 4-> Encontrar Nó;
+ * 5-> Encontrar anterior/seguinte do Nó pretendido;
+ * 6 -> Sair;
+ *  
  * \return Retorna 0 ao finalizar o programa.
  */
 
