@@ -1,7 +1,5 @@
 /** \file func_aux.c 
  *  \brief Funções Auxiliares para validar a chave e para validar os dados.
- * 
- * 
  *  
  *  \authors Joana Duarte(102608), Hugo Miranda(104348)
  *  \date 18 Março 2025
@@ -18,8 +16,6 @@
  *  Esta função recebe um ponteiro para a chave e realiza a validação da mesma.
  * 
  *  \param[in]  chave  Ponteiro para a chave que vai ser validada
- * 
- * 
  * 
  */
 
@@ -67,7 +63,7 @@ void ValidarChave(uint16_t *chave) {
         }
 
         *chave = (uint16_t)valor;
-        valido = 1;                     // Entrada válida-> sair do loop
+        valido = 1;   // Entrada válida-> sair do loop
     }
 }
 
@@ -76,7 +72,6 @@ void ValidarChave(uint16_t *chave) {
  *  \brief Função auxiliar para validar os dados.
  * 
  *  Esta função recebe um ponteiro para um conjunto de dados e verifica a sua validade.
- * 
  * 
  *  \param[in] dados Ponteiro para os dados a serem validados.
  * 

@@ -10,7 +10,7 @@
  #include "myDLL.h"
 
  /**    
-  *   \brief Inicializar a lista duplamente ligada.
+  *  \brief Inicializar a lista duplamente ligada.
   * 
   *  Esta função configura os valores iniciais da estrutura da lista, garantindo  que ela esteja vazia.
   * 
@@ -51,7 +51,6 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
     if (lst->numero_no < numero_nos){
     }else{ 
         printf("\n Lista cheia!\n");
-
         return;
     }
 
@@ -59,9 +58,7 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
     for (int i = 0; i < lst->numero_no; i++) {
 
         if (lst->array_nos[i].chave_no == chave) {      // Verifica se a chave já existe na lista
-
             printf("\n A chave já existe!\n");
-
             return;
         }
     }
@@ -75,13 +72,13 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
     novoNo->no_anterior = lst->ultimo_no;           
               
     //Atualizar as referẽncias 
-    if (lst->numero_no != 0) {         // Se já existem nós na lista      
+    if (lst->numero_no != 0) { // Se já existem nós na lista      
 
         lst->array_nos[lst->numero_no- 1].proximo_no = lst->numero_no;   
         novoNo->no_anterior = lst->numero_no - 1;                        
         lst->ultimo_no = lst->numero_no;            
 
-    } else {                        //senão existirem nós
+    } else {  //senão existirem nós
         lst->no_atual = lst->numero_no;    
         lst->primeiro_no = lst->numero_no;
         lst->ultimo_no = lst->numero_no;   
@@ -94,8 +91,7 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
 /**
  * \brief Remove um nó da lista duplamente ligada com base na chave fornecida.
  * 
- * Esta função remove um nó identificado pela sua chave, garantindo a reestruturação da lista 
- * para manter a integridade dos ponteiros e evitar espaços vazios entre os elementos.
+ * Esta função remove um nó identificado pela sua chave, garantindo a reestruturação da lista para manter a integridade dos ponteiros e evitar espaços vazios entre os elementos.
  * 
  * \param[in] list -> Ponteiro para a estrutura da lista.
  * \param[in] id   -> Chave do nó a ser removido.
@@ -139,7 +135,7 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
 
     // Dar reset ao ponteiro do nó removido
     if(list->no_atual == remover_chave){
-        list->no_atual = -1;
+        list->no_atual = -1; 
         list->p_no_atual = NULL;
     }
 
@@ -164,6 +160,7 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
  * \brief Encontra um nó a partir da chave.
  * 
  * Esta função percorre a lista duplamente ligada e retorna um ponteiro para o nó encontrado que tem a chave fornecida.
+ * Caso não seja encontado a função retorna NULL.
  * 
  * \param[in] list -> Ponteiro para a estrutura da lista.
  * \param[in] id   -> Identificador do nó a ser encontrado.
@@ -176,8 +173,8 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
     for (int i = 0; i < list->numero_no; i++) {
         if (list->array_nos[i].chave_no == id) { // verifica se o nó tem a chave corresponhdente à pedida
             // Atualização dos ponteiros  para o nó encontrado
-            list->no_atual = i;
-            list->p_no_atual = &list->array_nos[i];
+            list->no_atual = i; // Atualiza o índice 
+            list->p_no_atual = &list->array_nos[i]; // atualiza o ponteiro para o nó encontrado
         
             return list->p_no_atual;
         }
@@ -187,7 +184,9 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
 
 
  /**
- * \brief Retorna o elemento anterior ou seguinte do elemento com a chave especificada.
+ * \brief Retorna o elemento anterior ou seguinte do elemento com a chave pedida
+ * 
+ * Esta função retorna o pornteiro para o nó seguinte ou anterior. Caso não seja encontrado nehum nó com a chave pedida, a função retorna NULL.
  * 
  * \param[in] list -> Ponteiro para a estrutura da lista.
  * \param[in] find -> Indica nó anterior ou seguinte que o utilizador pretende encontrar.
@@ -208,27 +207,27 @@ no *MyDLLFindPrevNext (lista *list, char *find, uint16_t id){
         return NULL;
     }
 
-    if((strcmp(find, "A") == 0) || (strcmp(find, "a") == 0)){
+    if((strcmp(find, "A") == 0) || (strcmp(find, "a") == 0)){              // retorna 0 se o "find" for igual a 'a' ou 'A'  
         // primeiro verificar se estamos no primeiro
         if(list->p_no_atual->no_anterior == -1){
             printf("O Nó com Chave:%hd corresponde ao primeiro Nó.\n", list->p_no_atual->chave_no);
             return list->p_no_atual;
         }
         // Caso não seja o primeiro
-        list->no_atual = list->p_no_atual->no_anterior;
-        list->p_no_atual = &list->array_nos[list->no_atual];
+        list->no_atual = list->p_no_atual->no_anterior; // Atualiza o índice do nó atual para o anterior
+        list->p_no_atual = &list->array_nos[list->no_atual]; // Atualiza o ponteiro p_no_atual para apontar para o nó anterior dentro do array de nós
         printf("Nó encontrado prev: Chave = %d, Dados = %s\n", list->p_no_atual->chave_no, list->p_no_atual->dados_no);
         return list->p_no_atual;
 
-    } else if((strcmp(find, "S") == 0) || (strcmp(find, "s") == 0)){
+    } else if((strcmp(find, "S") == 0) || (strcmp(find, "s") == 0)){     // retorna 0 se o "find" for igual a 's' ou 'S'                          
         // primeiro verificar se estamos no último
         if(list->p_no_atual->proximo_no == -1){
             printf("O Nó com Chave:%hd corresponde ao último Nó.\n", list->p_no_atual->chave_no);
             return list->p_no_atual;
         }
         // Caso não seja o último
-        list->no_atual = list->p_no_atual->proximo_no;
-        list->p_no_atual = &list->array_nos[list->no_atual];
+        list->no_atual = list->p_no_atual->proximo_no; // Atualiza o índice do nó atual para o seguinte
+        list->p_no_atual = &list->array_nos[list->no_atual]; // Atualiza o ponteiro p_no_atual para apontar para o nó seguinte dentro do array de nós
         printf("Nó encontrado prev: Chave = %d, Dados = %s\n", list->p_no_atual->chave_no, list->p_no_atual->dados_no);
         return list->p_no_atual;
 
