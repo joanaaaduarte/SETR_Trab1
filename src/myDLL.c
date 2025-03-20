@@ -56,7 +56,6 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
 
 
     for (int i = 0; i < lst->numero_no; i++) {
-
         if (lst->array_nos[i].chave_no == chave) {      // Verifica se a chave já existe na lista
             printf("\n A chave já existe!\n");
             return;
@@ -66,10 +65,10 @@ void MyDLLInsert(lista *lst, uint16_t chave, const unsigned char *dados) {  //ES
     //copia os dados para o nóó
     memcpy(novoNo->dados_no, dados, tamanho_dados); //Referência: https://labex.io/tutorials/cpp-how-to-safely-copy-memory-in-c-419094
 
-    novoNo->proximo_no = -1;        
 
     //atuliza o nó anterior
-    novoNo->no_anterior = lst->ultimo_no;           
+    novoNo->no_anterior = lst->ultimo_no;    
+    novoNo->proximo_no = -1;         
               
     //Atualizar as referẽncias 
     if (lst->numero_no != 0) { // Se já existem nós na lista      
